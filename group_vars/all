@@ -40,11 +40,11 @@
 
 # SUPReMM
 
-  enable_supremm: true
+  enable_supremm: false 
 
-  supremm_url: https://github.com/ubccr/xdmod-supremm/releases/download/v8.1.0/xdmod-supremm-8.1.0-1.0.el7.noarch.rpm
+  supremm_url: "https://github.com/ubccr/xdmod-supremm/releases/download/v9.5.0/xdmod-supremm-9.5.0-1.0.el7.noarch.rpm" 
 
-  supremm_job_summarization_url: https://github.com/ubccr/supremm/releases/download/1.2.0/supremm-1.2.0-1.el7.x86_64.rpm
+  supremm_job_summarization_url: "https://github.com/ubccr/supremm/releases/download/1.4.1/supremm-1.4.1-1.el7.src.rpm"
 
   data_source: "pcp"
 
@@ -64,11 +64,11 @@
 
 # job_archiver related
 
-  "archive_out_dir": "/home/centos/supremm_test"
+  enable_job_archiver: true
+  archive_out_dir: "/home/centos/supremm_test"
 
 # Hierarchy related 
 
   hierarchy_file_path: ""
   group_to_hierarchy_file_path: ""
-  enable_job_archiver: true
   
