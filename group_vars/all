@@ -62,12 +62,17 @@
 
   archive_out_dir: "/home/pcp/job_summary_staging"
 
-# job_archiver related
+# Job_archiver related
 
   enable_job_archiver: true
-  archive_out_dir: "/home/centos/supremm_test"
+  job_archiver_url: https://github.com/eesaanatluri/job_archive.git
+  job_archiver_tag: "feat-uabrc-local-changes"
+  job_archiver_path: "/opt/job_archive"
+  job_archiver_bin: "/usr/local/bin/job_archive"
+  job_archiver_user: "slurm"
+  job_archiver_dest: "/var/slurm/jobscript_archive"
 
-# Hierarchy related 
+# Hierarchy related
 
   hierarchy_file_path: ""
   group_to_hierarchy_file_path: ""
