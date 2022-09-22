@@ -142,7 +142,7 @@
    command: xdmod-ingestor --last-modified-start-date "{{ ansible_date_time.date }}" 
 
  - name: shred slurm records
-   command: xdmod-slurm-helper -r {{ slurm_cluster_name }}
+   command: "xdmod-shredder -r {{ slurm_cluster_name }} -f slurm -i {{ sacct_log_file_path }}" 
 
  - name: ingest slurm records
    command: xdmod-ingestor
@@ -152,7 +152,7 @@
      hour: 0
      minute: 10
      state: present
-     job: "xdmod-slurm-helper -r {{ slurm_cluster_name }}"
+     job: "xdmod-shredder -r {{ slurm_cluster_name }} -f slurm -i {{ sacct_log_file_path }}"
    when: enable_supremm == false
 
  - name: create xdmod ingestor cron job

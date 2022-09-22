@@ -38,6 +38,8 @@
   xdmod_ingestor_start_date: "date +'\\%F'"
   xdmod_ingestor_end_date: "date -d 'next day' +'\\%F'"
 
+  sacct_log_file_path: ""
+
 # SUPReMM
 
   enable_supremm: false 
