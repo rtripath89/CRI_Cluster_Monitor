@@ -25,8 +25,15 @@
      - "php-pear-MDB2"
      - "php-pear-MDB2-Driver-mysql"
      - "php-xml"
+     - "php-mbstring"
+     - "php-pecl-apcu"
      - "bzip2"
      - "python-pip"
+     - "libreoffice"
+     - "perl-Image-ExifTool"
+     - "jq" 
+     - "librsvg2-tools"
+     - "chromium-headless"
 
  - name: install pexpect
    command: pip install -U pip
