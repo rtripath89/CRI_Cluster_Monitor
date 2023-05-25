@@ -152,7 +152,7 @@
      hour: 0
      minute: 10
      state: present
-     job: "xdmod-shredder -r {{ slurm_cluster_name }} -f slurm -i {{ sacct_log_file_path }}"
+     job: "sacct --allusers --parsable2 --noheader --allocations --duplicates --clusters {{ slurm_cluster_name }} --format jobid,jobidraw,cluster,partition,account,group,gid,user,uid,submit,eligible,start,end,elapsed,exitcode,state,nnodes,ncpus,reqcpus,reqmem,reqtres,alloctres,timelimit,nodelist,jobname --starttime {{ xdmod_shredder_start_time }} --end-time {{ xdmod_shredder_end_time }} > {{ sacct_log_file_path }} && xdmod-shredder -r {{ slurm_cluster_name }} -f slurm -i {{ sacct_log_file_path }}"
    when: enable_supremm == false
 
  - name: create xdmod ingestor cron job
