@@ -160,7 +160,7 @@
      hour: 0
      minute: 30
      state: present
-     job: "xdmod-ingestor"
+     job: "xdmod-ingestor --start-date {{ xdmod_ingestor_start_date }} --end-date {{ xdmod_ingestor_end_date }}"
    when: enable_supremm == false
 
  - name: reload httpd
