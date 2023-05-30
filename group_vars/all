@@ -64,6 +64,10 @@
 
   archive_out_dir: "/home/pcp/job_summary_staging"
 
+# Selinix Permissive related
+
+  enable_selinix_permissive: false
+
 # Job_archiver related
 
   enable_job_archiver: false
@@ -78,4 +82,14 @@
 
   hierarchy_file_path: ""
   group_to_hierarchy_file_path: ""
+
+# Openssl_Cert_Gen related
   
+  openssl_cert_gen: false
+  ServerName: ''
+
+# Simplesaml  related  
+
+  enable_simplesaml: false
+  simplesaml_url: https://github.com/simplesamlphp/simplesamlphp/releases/download/v1.19.7/simplesamlphp-1.19.7.tar.gz
+  trusted_url_domains: ''
