@@ -78,4 +78,10 @@
 
   hierarchy_file_path: ""
   group_to_hierarchy_file_path: ""
-  
+
+
+# Simplesaml  related  
+
+  enable_simplesaml: false
+  simplesaml_url: https://github.com/simplesamlphp/simplesamlphp/releases/download/v1.19.7/simplesamlphp-1.19.7.tar.gz
+  trusted_url_domains: ''
